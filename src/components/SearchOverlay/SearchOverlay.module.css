@@ -1,0 +1,132 @@
+.dialog {
+  width: min(720px, 100%);
+  max-height: min(72vh, 680px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow-hover);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-12px) scale(0.98);
+  transition:
+    opacity 360ms ease,
+    transform 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:global(.overlay.is-open) .dialog {
+  opacity: 1;
+  transform: none;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  min-height: 36px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.esc {
+  color: var(--text-muted);
+  font-size: 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 3px 7px;
+}
+
+.results {
+  overflow: auto;
+  padding: 10px;
+  flex: 1;
+}
+
+.groupTitle {
+  margin: 8px 8px 4px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 52px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.item[data-active="true"] {
+  background: var(--surface-subtle);
+}
+
+.itemTitle,
+.itemSub {
+  display: block;
+}
+
+.itemTitle {
+  font-weight: 700;
+}
+
+.itemSub {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.tag {
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 999px;
+  padding: 3px 8px;
+}
+
+.empty {
+  padding: 28px 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 10px 16px 12px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .dialog {
+    width: 100%;
+    max-height: 100dvh;
+    height: 100dvh;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,46 @@
+.card {
+  padding: 28px 36px;
+  min-height: 267px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.9em;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.45em;
+}
+
+.headline {
+  margin: 0;
+  font-size: clamp(34px, 3.4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.summary {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.45;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 22px 20px;
+    gap: 2.9em;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
