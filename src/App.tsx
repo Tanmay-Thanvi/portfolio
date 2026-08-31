@@ -18,9 +18,34 @@ const META_ICONS = {
   clock: Clock,
 };
 
-function Mark({ logoUrl, mark, alt }: { logoUrl: string; mark: string; alt: string }) {
-  if (logoUrl) {
-    return <img className="company-logo" src={logoUrl} alt={alt} />;
+function Mark({
+  logoUrl,
+  logoUrlDark,
+  mark,
+  alt,
+  theme,
+  contain,
+  fill,
+}: {
+  logoUrl: string;
+  logoUrlDark?: string;
+  mark: string;
+  alt: string;
+  theme?: "light" | "dark";
+  contain?: boolean;
+  fill?: boolean;
+}) {
+  const src = theme === "dark" && logoUrlDark ? logoUrlDark : logoUrl;
+  if (src) {
+    if (fill) {
+      return (
+        <span className={`company-logo-frame${theme === "dark" ? " is-on-dark" : ""}`}>
+          <img src={src} alt={alt} />
+        </span>
+      );
+    }
+    const classes = ["company-logo", contain ? "is-wordmark" : ""].filter(Boolean).join(" ");
+    return <img className={classes} src={src} alt={alt} />;
   }
   return <span className="company-mark">{mark}</span>;
 }
@@ -46,7 +71,7 @@ export default function App() {
 
   return (
     <div className="page">
-      <div className="shell">
+      <div className="desk">
       <aside className="rail">
         <div className="rail-top">
           <div className="identity">
@@ -117,7 +142,14 @@ export default function App() {
             <h2>Experience</h2>
             {jobs.map((job) => (
               <div className="entry" key={job.id}>
-                <Mark logoUrl={job.logoUrl} mark={job.mark} alt={job.company} />
+                <Mark
+                  logoUrl={job.logoUrl}
+                  logoUrlDark={"logoUrlDark" in job ? job.logoUrlDark : undefined}
+                  fill={"logoFill" in job && job.logoFill}
+                  mark={job.mark}
+                  alt={job.company}
+                  theme={theme}
+                />
                 <div>
                   <div className="entry-top">
                     <h3>{job.company}</h3>
@@ -155,7 +187,7 @@ export default function App() {
             <h2>Education</h2>
             {schools.map((school) => (
               <div className="entry" key={school.id}>
-                <Mark logoUrl={school.logoUrl} mark={school.mark} alt={school.school} />
+                <Mark logoUrl={school.logoUrl} mark={school.mark} alt={school.school} contain />
                 <div>
                   <div className="entry-top">
                     <h3>{school.school}</h3>

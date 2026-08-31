@@ -127,11 +127,12 @@
       "current": true,
       "visible": true,
       "mark": "D",
-      "logoUrl": "",
+      "logoUrl": "/logos/deepintent.jpg",
+      "logoUrlDark": "/logos/deepintent.jpg",
       "companyUrl": "https://www.deepintent.com",
       "location": "Pune, Maharashtra, India",
       "domain": "AdTech / DSP",
-      "summary": "Owned and built a distributed rate limiter on the Go API gateway, improving system stability and protecting downstream services.",
+      "summary": "Owned and built a distributed rate limiter on the GO API gateway, improving system stability and protecting downstream services.",
       "stack": [
         "Java",
         "Spring",
@@ -182,7 +183,9 @@
       "current": false,
       "visible": true,
       "mark": "P",
-      "logoUrl": "",
+      "logoUrl": "/logos/pubmatic.png",
+      "logoUrlDark": "/logos/pubmatic-dark.jpg",
+      "logoFill": true,
       "companyUrl": "https://pubmatic.com",
       "location": "Pune, India",
       "domain": "AdTech / DSP",
@@ -349,7 +352,7 @@
       "location": "Pune, India",
       "score": "CGPA 9.1",
       "mark": "P",
-      "logoUrl": ""
+      "logoUrl": "/logos/pict.png"
     }
   ],
   "academics": [
