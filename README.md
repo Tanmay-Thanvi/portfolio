@@ -1,6 +1,6 @@
 # Tanmay Thanvi — Portfolio
 
-Recruiter-first software engineer portfolio. React + Vite + TypeScript, deployed to GitHub Pages.
+Recruiter-first software engineer portfolio. React + Vite, deployed to GitHub Pages.
 
 ```bash
 npm install

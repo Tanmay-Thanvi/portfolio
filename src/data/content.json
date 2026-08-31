@@ -115,6 +115,7 @@
   ],
   "copy": {
     "currentBadge": "Current",
+    "contactHeadline": "Let's build reliable systems together",
     "contactBody": "Open to conversations about backend, platform, and AdTech roles.",
     "exceptionalAbility": "I’m most proud of designing and building a distributed Rate Limiter for our API Gateway when I had only around five months of professional experience. I took ownership of it myself and designed it to be fully config-driven, so limits, bucket sizes, and even the algorithm could be changed without touching the code. It became a scalable and reusable solution for the team."
   },
@@ -132,7 +133,7 @@
       "companyUrl": "https://www.deepintent.com",
       "location": "Pune, Maharashtra, India",
       "domain": "AdTech / DSP",
-      "summary": "Owned and built a distributed rate limiter on the GO API gateway, improving system stability and protecting downstream services.",
+      "summary": "Owned and built a distributed rate limiter on the Go API gateway, improving system stability and protecting downstream services.",
       "stack": [
         "Java",
         "Spring",
@@ -739,6 +740,14 @@
       "visible": false
     }
   ],
+  "highlights": {
+    "_edit": "Same visible:true/false pattern as everywhere else. openSource item status is 'merged' or 'published' (controls the badge). achievements/blogPosts are empty until real entries are added.",
+    "headline": "Engineering beyond the day job",
+    "subline": "Open-source work, continuous learning, and technical writing.",
+    "openSource": [],
+    "achievements": [],
+    "blogPosts": []
+  },
   "notes": {
     "doNotClaim": [
       "Open-source maintainer / significant OSS contributions",

@@ -1,11 +1,10 @@
-.PHONY: help install dev build preview lint
+.PHONY: help install dev build preview
 
 help:
 	@echo "install  Install npm dependencies"
 	@echo "dev      Start the Vite dev server"
-	@echo "build    Typecheck and build for production"
+	@echo "build    Build for production"
 	@echo "preview  Serve the production build locally"
-	@echo "lint     Run oxlint"
 
 install:
 	npm install
@@ -18,6 +17,3 @@ build:
 
 preview:
 	npm run preview -- --host 127.0.0.1 --port 4173
-
-lint:
-	npm run lint
