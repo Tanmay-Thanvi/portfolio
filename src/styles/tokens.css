@@ -1,76 +1,35 @@
 :root {
   color-scheme: light;
-  --page: #f3f4ef;
-  --header: #ffffff;
+  --page: #efeaf8;
   --surface: #ffffff;
-  --surface-subtle: #eef1ea;
-  --surface-raised: #ffffff;
-  --text: #172033;
-  --text-muted: #5e6878;
-  --primary: #0b6b50;
-  --primary-hover: #084d3b;
-  --primary-soft: #e5f4ee;
+  --surface-subtle: #f7f4fd;
+  --text: #16141f;
+  --text-muted: #6f6a7c;
+  --primary: #6d4aff;
+  --primary-hover: #5a38eb;
+  --primary-soft: #f3eeff;
   --primary-ink: #ffffff;
-  --experience: #0b6b50;
-  --experience-soft: #e5f4ee;
-  --project: #0b6b50;
-  --project-soft: #e5f4ee;
-  --border: #d4dbd2;
-  --focus: #75bfa4;
-  --footer: #0b6b50;
-  --footer-text: #f3f6f2;
-  --overlay: rgba(23, 32, 51, 0.42);
-  --shadow:
-    0 1px 1px rgba(23, 32, 51, 0.04),
-    0 2px 6px rgba(23, 32, 51, 0.04),
-    0 10px 28px rgba(23, 32, 51, 0.07);
-  --shadow-hover:
-    0 1px 2px rgba(23, 32, 51, 0.05),
-    0 8px 18px rgba(23, 32, 51, 0.07),
-    0 22px 40px rgba(23, 32, 51, 0.1);
-  --theme-duration: 0.5s;
-  --radius-card: 22px;
-  --radius-btn: 12px;
-  --header-h: 72px;
-  --gutter: 32px;
+  --border: #ece8f4;
+  --line: #eceaf2;
+  --focus: #8b6cf0;
+  --shadow: none;
+  --theme-duration: 0.35s;
+  --radius-shell: 36px;
+  --radius-btn: 14px;
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
-  --page: #09110f;
-  --header: #121e1a;
-  --surface: #121e1a;
-  --surface-subtle: #172620;
-  --surface-raised: #172620;
-  --text: #f3f6f2;
-  --text-muted: #aab7b1;
-  --primary: #58c89a;
-  --primary-hover: #78d9b1;
-  --primary-soft: #16362c;
-  --primary-ink: #09110f;
-  --experience: #58c89a;
-  --experience-soft: #16362c;
-  --project: #58c89a;
-  --project-soft: #16362c;
-  --border: #2a3a34;
-  --focus: #7de0b5;
-  --footer: #102f26;
-  --footer-text: #f3f6f2;
-  --overlay: rgba(3, 8, 7, 0.68);
-  --shadow:
-    0 1px 1px rgba(0, 0, 0, 0.18),
-    0 6px 16px rgba(0, 0, 0, 0.22),
-    0 16px 36px rgba(0, 0, 0, 0.28);
-  --shadow-hover:
-    0 2px 4px rgba(0, 0, 0, 0.2),
-    0 10px 22px rgba(0, 0, 0, 0.26),
-    0 24px 48px rgba(0, 0, 0, 0.34);
-}
-
-@media (max-width: 767px) {
-  :root {
-    --gutter: 20px;
-    --header-h: 64px;
-    --radius-card: 18px;
-  }
+  --page: #121018;
+  --surface: #1b1724;
+  --surface-subtle: #241f30;
+  --text: #f5f2fb;
+  --text-muted: #b4adc4;
+  --primary: #b49cff;
+  --primary-hover: #c9b8ff;
+  --primary-soft: #2a2340;
+  --primary-ink: #120e1c;
+  --border: #3a334c;
+  --line: #332c44;
+  --focus: #c9b8ff;
 }
