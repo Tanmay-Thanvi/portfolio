@@ -28,11 +28,11 @@
   "links": {
     "resume": {
       "label": "Resume",
-      "href": "/resume.pdf"
+      "href": "resume.pdf"
     },
     "downloadResume": {
       "label": "Download resume",
-      "href": "/resume.pdf"
+      "href": "resume.pdf"
     },
     "linkedin": {
       "label": "LinkedIn",
@@ -128,8 +128,8 @@
       "current": true,
       "visible": true,
       "mark": "D",
-      "logoUrl": "/logos/deepintent.jpg",
-      "logoUrlDark": "/logos/deepintent.jpg",
+      "logoUrl": "logos/deepintent.jpg",
+      "logoUrlDark": "logos/deepintent.jpg",
       "companyUrl": "https://www.deepintent.com",
       "location": "Pune, Maharashtra, India",
       "domain": "AdTech / DSP",
@@ -184,8 +184,8 @@
       "current": false,
       "visible": true,
       "mark": "P",
-      "logoUrl": "/logos/pubmatic.png",
-      "logoUrlDark": "/logos/pubmatic-dark.jpg",
+      "logoUrl": "logos/pubmatic.png",
+      "logoUrlDark": "logos/pubmatic-dark.jpg",
       "logoFill": true,
       "companyUrl": "https://pubmatic.com",
       "location": "Pune, India",
@@ -353,7 +353,7 @@
       "location": "Pune, India",
       "score": "CGPA 9.1",
       "mark": "P",
-      "logoUrl": "/logos/pict.png"
+      "logoUrl": "logos/pict.png"
     }
   ],
   "academics": [
